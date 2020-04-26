@@ -32,6 +32,7 @@ class WebTestCase(unittest.TestCase):
         response = conn.getresponse()
         self.assertEqual(200, response.getcode())
 
+
         conn.close()
 
         return response
